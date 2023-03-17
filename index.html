@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>ScratchView</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <fieldset id="viewtypes" style="display: none">
+                <legend>View</legend>
+                <fieldset id="extensionsbtn">Extensions</fieldset>
+                <fieldset id="metadatabtn">Metadata</fieldset>
+                <fieldset id="monitorsbtn">Monitors</fieldset>
+                <fieldset id="targetsbtn">Targets</fieldset>
+            </fieldset>
+    
+            <fieldset id="extensions" class="detailWrapper" style="display: none"> 
+                <legend>Extensions:</legend>
+            </fieldset>
+            <fieldset id="metadata" class="detailWrapper" style="display: none"> 
+                <legend>Metadata:</legend>
+            </fieldset>
+            <fieldset id="monitors" class="detailWrapper" style="display: none"> 
+                <legend>Monitors:</legend>
+            </fieldset>
+            <fieldset id="targets" class="detailWrapper" style="display: none"> 
+                <legend>Targets:</legend>
+                <select name="spriteselect" id="spriteselect"></select>
+                <hr>
+                <div class="hpicker">
+                    <div class="hpickerbtn selected" id="infobtn">Info</div>
+                    <div class="hpickerbtn"          id="blocksbtn">Blocks</div>
+                    <div class="hpickerbtn"          id="broadcastsbtn">Broadcasts</div>
+                    <div class="hpickerbtn"          id="commentsbtn">Comments</div>
+                    <div class="hpickerbtn"          id="costumesbtn">Costumes</div>
+                    <div class="hpickerbtn"          id="listsbtn">Lists</div>
+                    <div class="hpickerbtn"          id="soundsbtn">Sounds</div>
+                    <div class="hpickerbtn"          id="variablesbtn">Variables</div>
+                </div>
+                <fieldset class="hpickerbody" id="targetinfo"></fieldset>
+            </fieldset>
+            <div id="beginPrompt">
+                Drag and drop the sb3 file anywhere to open it!
+            </div>
+        </div>
+
+        <script src="jszip.min.js"></script>
+        <script src="functions.js"></script>
+        <script src="parse.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
